@@ -262,7 +262,7 @@ Game PlayNewGame(Operator originalOperator, Difficulty level, bool voiceMode)
     // final display of the problems and answers of completed game below
     DisplayPreviousProblems(currentProblems, true);
 
-    AnsiConsole.MarkupLine($"\n[bold yellow[Dun dun dunnnnnn....... \nDid you win or lose?[/]\n\n{(didUserWin ? "[green]You won![/]" : "[maroon]You lost![/]")}");
+    AnsiConsole.MarkupLine($"\n[bold yellow]Dun dun dunnnnnn....... \nDid you win or lose?[/]\n\n{(didUserWin ? "[green]You won![/]" : "[maroon]You lost![/]")}");
     AnsiConsole.MarkupLine($"\nYou got {correctAnswerCounter} / 10 questions right.");
     AnsiConsole.MarkupLine($"It took you: {timeElapsed} to complete the game.");
 
